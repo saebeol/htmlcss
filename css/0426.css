@@ -1,0 +1,129 @@
+.box{ width:100px; height: 100px;
+    background-color: red;
+    position: absolute;
+    }
+    .box:nth-of-type(1){
+        background-color: red;
+        left:0; top:50px;
+    }
+    .box:nth-of-type(2){
+        background-color: blue;
+        left:50px; top:100px;
+    }
+    .box:nth-of-type(3){
+        background-color: orange;
+        left:100px; top:150px;
+    }
+    /* 마지막에 입력한 요소가 맨앞으로 올라간다. */
+    .box:nth-of-type(1):hover{
+        z-index: 1;
+    }
+    /* 숫자가 높으면 위로 올라간다. */
+    .box:nth-of-type(2):hover{
+        z-index: 2;
+    }
+    .wrap{
+        border:1px solid red;
+        position: relative;
+        width:500px; height:200px;
+        overflow: auto;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    .wrap:hover{
+        overflow: visible;
+    }
+    .wrap:active{
+        overflow: scroll;
+    }
+    .shadow{
+        width:400px; height:100px;
+        border:1px solid gray;
+        box-shadow: -5px -5px 5px 1px black;
+        margin:20px;
+        border-radius: 20px;
+        text-align: center;
+        line-height: 100px;
+    }
+    .shadow:hover{
+        box-shadow: inset 5px 5px 5px 1px black;
+    }
+    .shadow:active{
+        box-shadow:5px 5px 5px gold,
+        -10px -10px 10px 10px red,
+         15px 15px 20px orange  ;
+    }
+    
+    .shadow{ font-size: 2em;
+        text-shadow: 2px 2px 2px gold;
+    }
+    .shadow:hover{ 
+      text-shadow: 2px 2px 2px gold ,
+                   2px -5px 2px orange   ;
+     }
+     .shadow:active{ 
+        text-shadow: 2px 2px 2px gold ,
+                     -2px -5px 4px orange,
+                     -2px -8px 6px red       ;
+           background-color: black;
+           color:white;
+       }
+    
+       .sample{
+        border-style: solid;
+        border-width: 35px 51px 28px 42px;
+        -moz-border-image: url(../imgs/asdf.png) 67 64 60 67 stretch round;
+        -webkit-border-image:  url(../imgs/asdf.png) 67 64 60 67 stretch round;
+        -o-border-image:  url(../imgs/asdf.png) 67 64 60 67 stretch round;
+        border-image:  url(../imgs/asdf.png) 67 64 60 67 stretch round;
+        height: 200px;
+        }
+        .myButton {
+            box-shadow: 0px 0px 0px 2px #9fb4f2;
+            background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+            background-color:#7892c2;
+            border-radius:10px;
+            border:1px solid #4e6096;
+            display:inline-block;
+            cursor:pointer;
+            color:#ffffff;
+            font-family:Arial;
+            font-size:19px;
+            padding:12px 37px;
+            text-decoration:none;
+            text-shadow:0px 1px 0px #283966;
+        }
+        .myButton:hover {
+            background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+            background-color:#476e9e;
+        }
+        .myButton:active {
+            position:relative;
+            top:1px;
+        }
+
+.myButton {
+	box-shadow:inset 0px -3px 7px 0px #29bbff;
+	background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+	background-color:#2dabf9;
+	border-radius:3px;
+	border:1px solid #0b0e07;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+	background-color:#0688fa;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+        
